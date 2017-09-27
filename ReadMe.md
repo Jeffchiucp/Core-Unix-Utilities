@@ -118,11 +118,20 @@ Challenges within each section are meant to be solved in order.
 ### Permissions
 
 1.  Print out your user name
+	-`dscl . list /Users`
 1.  List the permissions (and metadata) of all `.txt` files
+	-`ls -al *.txt`
 1.  Give all users write permission on the file `Cats.txt`
+	-`chmod +w Cats.txt`
 1.  List the permissions (and metadata) of the file `Cats.txt`
+	-``
 1.  Change the owner of the file `Cats.txt` to another user
+	-`sudo chown Guest: Cats.txt`
 1.  Now list the permissions (and owner) of the file `Cats.txt`
+	-`ls -al`
 1.  Try to change the owner of the file `Cats.txt` back to yourself
+	-`chown jeff: Cats.txt`
 1.  Invoke the super-user to make the previous command succeed
+	-`sudo chown jchiu: Cats.txt`
 1.  List the permissions (and owner) of the file `Cats.txt` again
+	-`ls -l Cats.txt`
