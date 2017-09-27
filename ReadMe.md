@@ -54,24 +54,38 @@ Challenges within each section are meant to be solved in order.
 ### Variables
 
 1.  Print a sentence, like `Hello world`
+	- `echo "Hello World"`
 1.  Print a variable value, like `$USER` or `$PATH`
+	- `echo $USER` `echo $PATH`
 1.  Set a variable `NAME` equal to your first name, then print its value
+	- `NAME='Jeff'; echo $NAME`
 1.  Set a variable `FULL_NAME` equal to your full name, then print its value
+	- `FULL_NAME='Jeff Chiu'; echo $FULL_NAME`
 1.  Print all environment variables (names and values)
+	- `set`
 1.  Make an alias named `hello` that prints `Hello world`
+	- `alias hello='echo "Hello World"'`
 1.  Make an alias named `gocode` that navigates to your code directory
+	- `alias gocode='cd /Users/jchiu/Desktop/Make/Term1/Core-Unix-Utilities`
 1.  Print all aliases (names and values)
+	-
 
 ### Getting Help
 
 1.  Print what options a command accepts, like `bash` or `python`
+	-`bash --help`
+	-`man bash`
 1.  Read the manual for a command, like `echo` or `ls`
+	-`man echo`
 1.  Print the file path to a command, like `bash` or `python`
+	-`which bash`
 
 ### Files
 
 1.  Navigate to the directory `Animals`
+	-`cd Animals`
 1.  Print the contents of the file `Cats.txt`
+	-`echo Cats.txt`
 1.  Print the contents of both files `Cats.txt` and `Dogs.txt`
 1.  Count the words in the file `Cats.txt`
 1.  Count the words in all files with the extension `.txt`
