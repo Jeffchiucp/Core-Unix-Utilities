@@ -89,7 +89,7 @@ Challenges within each section are meant to be solved in order.
 1.  Print the contents of both files `Cats.txt` and `Dogs.txt`
 	-`cat Cats.txt Dogs.txt`
 1.  Count the words in the file `Cats.txt`
-	-`wc Cats.txt`
+	-`wc w Cats.txt`
 1.  Count the words in all files with the extension `.txt`
 	-`wc *.txt`
 1.  Copy the file `Dogs.txt` to a new file `BabyDogs.txt`
@@ -99,7 +99,7 @@ Challenges within each section are meant to be solved in order.
 1.  Make a new directory named `Shelter` inside `Animals`
 	-`mkdir Shelter`
 1.  Move the file `Puppies.txt` into the directory `Shelter`
-	-`mv Puppies.txt Shelter/Puppies.txt`
+	-`mv Puppies.txt Shelter/`
 1.  Copy the file `Cats.txt` to `Kittens.txt` inside `Shelter`
 	-`cp Cats.txt Shelter/Kittens.txt`
 1.  List the files within the directory `Shelter`
@@ -147,17 +147,29 @@ Challenges within each section are meant to be solved in order.
 ### Streams
 
 1.  Print a sentence like `Hello world` into a file named `test.txt`
+	- `echo "Hello World" > test.txt`
 1.  Append another sentence `Hola Mundo` on a new line of `test.txt`
+	- `echo "Hola Mundo" >> test.txt`
 1.  Print the contents of the file `test.txt`
+	- `cat test.txt` or for longer files `less test.txt`
 1.  Print the contents of the file `numbers.txt`
+	- `cat Numbers/numbers.txt`
 1.  Print the first 10 lines in the file `numbers.txt`
+	- `head -10 Numbers/numbers.txt`
 1.  Print the first 5 lines in the file `numbers.txt`
+	- `head -5 Numbers/numbers.txt`
 1.  Print the last 10 lines in the file `numbers.txt`
+	- `tail -10 Numbers/numbers.txt`
 1.  Print the last 5 lines in the file `numbers.txt`
+	- `tail -5 Numbers/numbers.txt`
 1.  Print lines 6 through 10 in the file `numbers.txt`
+	- `head -10 Numbers/numbers.txt | tail -4`
 1.  Sort all lines in the file `numbers.txt`
+	- `sort Numbers/numbers.txt`
 1.  Print the first 2 characters of each line in `numbers.txt`
+	- `cut -c-2 Numbers/numbers.txt`
 1.  Print only characters 9-16 of each line in `numbers.txt`
+	- `cut -c 9-16 Numbers/numbers.txt`
 1.  Sort the first 2 characters of each line in `numbers.txt`
 1.  Print only the unique first 2 characters of each line in `numbers.txt`
 1.  Replace all `o`s with `0`s in file `test.txt`
@@ -167,7 +179,9 @@ Challenges within each section are meant to be solved in order.
 ### Search
 
 1.  Find the file named `Cats.txt` in the directory `Animals`
+	- `grep -r -l 'Cats.txt' Animals`
 1.  Find all files ending with `.py` in your code directory
+	- `grep *.py`
 1.  Find all files larger than 100 MB in your movies directory
 1.  Find all lines containing the word `one` in the file `numbers.txt`
 1.  Find all lines containing the letter `e` at least 3 times in the file `numbers.txt`
